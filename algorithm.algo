@@ -1,13 +1,27 @@
 ALGORITHM algorithm_name
-VAR sentence,character : STRING;
-VAR  last: CHAR;
-BEGIN
+VAR sentence : STRING:="";
+VAR  character: CHAR;
+VAR le_c, le_v,le_w:INTEGER;
+BEGIND:\Go My Code
 
-WHILE (last:=".") DO
+WHILE (character<>".") DO
  Write('enter the character ')
         Read(character)
-    IF (last:=" " ) THEN
-        sentence:=character+last
-    END_IF
+        // FOR i FROM 0 TO character.length DO
+            le_c++
+        // END_FOR
+        IF (c=" ") THEN
+            le_w++
+        END_IF
+        IF (character="a" or character="e" or character="o" or character="u" or character="i" or character="y" ) THEN
+            le_v++
+        END_IF
+        sentence:=senten.ceconcat(character)
 END_WHILE
+ Write('sentence c`est :'character)
+ Write('le number de character est : 'le_c)
+ Write('le number de vowels est : 'le_v)
+ Write('le number de word c est : 'le_w)
+
+
 END
