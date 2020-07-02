@@ -1,0 +1,13 @@
+ALGORITHM algorithm_name
+VAR sentence,character : STRING;
+VAR  last: CHAR;
+BEGIN
+
+WHILE (last:=".") DO
+ Write('enter the character ')
+        Read(character)
+    IF (last:=" " ) THEN
+        sentence:=character+last
+    END_IF
+END_WHILE
+END
